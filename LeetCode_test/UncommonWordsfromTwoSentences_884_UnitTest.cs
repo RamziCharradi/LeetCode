@@ -11,7 +11,7 @@ namespace LeetCode_test
     public class UncommonWordsfromTwoSentences_884_UnitTest
     {
         [TestMethod,Timeout(20_000)]
-        public void Medthod1()
+        public void TestMedthod1()
         {
             var Input_A = "this apple is sweet";
             var Input_B = "this apple is sour";
@@ -26,7 +26,7 @@ namespace LeetCode_test
         }
 
         [TestMethod, Timeout(20_000)]
-        public void Medthod2()
+        public void TestMedthod2()
         {
             var Input_A = "apple apple";
             var Input_B = "banana";
@@ -41,7 +41,7 @@ namespace LeetCode_test
         }
 
         [TestMethod, Timeout(20_000)]
-        public void Medthod3()
+        public void TestMedthod3()
         {
             var Input_A = "s z z z s";
             var Input_B = "s z ejt";
