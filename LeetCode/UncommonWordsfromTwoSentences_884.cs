@@ -24,6 +24,18 @@ namespace LeetCode
 
             return arr_X.Where(x => !arr_A.Any(y => y == x) || !arr_B.Any(y => y == x))
                         .ToArray();
+
+           /*** One Line Solution ******
+            
+             return string
+                         .Format("{0} {1}", A, B)
+                         .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                         .GroupBy(x => x)
+                         .Where(x => x.Count() == 1)
+                         .Select(x => x.Key)
+                         .ToArray();
+
+             ****************************/
         }
     }
 }
