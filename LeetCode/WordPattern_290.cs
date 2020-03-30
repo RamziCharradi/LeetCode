@@ -14,18 +14,18 @@ namespace LeetCode
             var Array_Str = str.Split(" ", StringSplitOptions.RemoveEmptyEntries);
             var Array_Pat = pattern.ToCharArray();
 
-            var D_str = Array_Str.GroupBy(x=>x).ToDictionary(x => x.Key, x => Array.IndexOf(Array_Str, x.Key));
+            var D_str = Array_Str.GroupBy(x => x).ToDictionary(x => x.Key, x => Array.IndexOf(Array_Str, x.Key));
 
-            for (int i = 0; i < Array_Pat.Length; i++)
+            foreach (var s in Array_Str)
             {
-                if(Array.IndexOf(Array_Pat, Array_Pat[i]) != D_str[Array_Str[i]])
-                {
-                    return false;
-                }
+                P += D_str[s];
+            }
+            foreach (var c in Array_Pat)
+            {
+                S += Array.IndexOf(Array_Pat, c);
             }
 
-
-            return true;
+            return P == S;
         }
     }
 }
