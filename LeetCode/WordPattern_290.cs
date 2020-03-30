@@ -9,23 +9,19 @@ namespace LeetCode
     {
         public static bool WordPattern(string pattern, string str)
         {
-            var P = "";
-            var S = "";
             var Array_Str = str.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+            if (pattern.Length != Array_Str.Length)
+            {
+                return false;
+            }
+
             var Array_Pat = pattern.ToCharArray();
 
-            var D_str = Array_Str.GroupBy(x => x).ToDictionary(x => x.Key, x => Array.IndexOf(Array_Str, x.Key));
-
-            foreach (var s in Array_Str)
-            {
-                P += D_str[s];
-            }
-            foreach (var c in Array_Pat)
-            {
-                S += Array.IndexOf(Array_Pat, c);
-            }
-
-            return P == S;
+            var P = Array_Pat.Select(x => Array.IndexOf(Array_Pat, x)).ToList();
+            var S = Array_Str.Select(x => Array.IndexOf(Array_Str, x)).ToList();
+            
+            return   P.SequenceEqual(S);
         }
     }
 }
