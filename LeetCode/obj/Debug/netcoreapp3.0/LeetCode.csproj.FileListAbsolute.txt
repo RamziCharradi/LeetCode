@@ -1,8 +1,8 @@
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\bin\Debug\netcoreapp3.0\LeetCode.deps.json
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\bin\Debug\netcoreapp3.0\LeetCode.dll
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\bin\Debug\netcoreapp3.0\LeetCode.pdb
-C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.csprojAssemblyReference.cache
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.AssemblyInfoInputs.cache
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.AssemblyInfo.cs
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.dll
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.pdb
+C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode\obj\Debug\netcoreapp3.0\LeetCode.csprojAssemblyReference.cache
