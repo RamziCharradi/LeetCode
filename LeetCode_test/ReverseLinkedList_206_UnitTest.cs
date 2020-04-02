@@ -41,7 +41,7 @@ namespace LeetCode_test
 
             var Actual = ReverseLinkedList_206.ReverseList(Input);
             
-            while (Expected.next != null && Actual.next != null)
+            while (Expected != null && Actual != null)
             {
                 Assert.AreEqual(Expected.val, Actual.val);
                 Expected = Expected.next;
