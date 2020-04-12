@@ -8,6 +8,7 @@ namespace LeetCode
     {
         public static int Rob(int[] nums)
         {
+            if (nums.Length == 0) return 0;
 
             int[] dp = new int[nums.Length + 1];
             dp[0] = 0;
