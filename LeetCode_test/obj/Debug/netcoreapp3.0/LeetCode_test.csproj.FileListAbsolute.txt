@@ -92,3 +92,5 @@ C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\obj\Debug\netcoreapp3.0
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\obj\Debug\netcoreapp3.0\LeetCode_test.dll
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\obj\Debug\netcoreapp3.0\LeetCode_test.pdb
 C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\bin\Debug\netcoreapp3.0\LeetCode_test.pdb
+C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\obj\Debug\netcoreapp3.0\LeetCode_test.csproj.CoreCompileInputs.cache
+C:\Users\Mystery\Desktop\Leetcode\LeetCode\LeetCode_test\obj\Debug\netcoreapp3.0\LeetCode_test.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4BMgsMRZuK7oZguS3i5mTKe8KMQODreAe5BIJjw32wlld4CeTtuVbUF//vLuQpMqV1QlShS/rRr9qP/aOtiRRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mystery\\Desktop\\Leetcode\\LeetCode\\LeetCode\\LeetCode.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mystery\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Mystery\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mystery\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
