@@ -38,5 +38,15 @@ namespace LeetCode_test
             var Actual = IsomorphicStrings_205.IsIsomorphic(Input_S, Input_T);
             Assert.AreEqual(Expected, Actual);
         }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            var Input_S = "ab";
+            var Input_T = "aa";
+            var Expected = false;
+            var Actual = IsomorphicStrings_205.IsIsomorphic(Input_S, Input_T);
+            Assert.AreEqual(Expected, Actual);
+        }
     }
 }

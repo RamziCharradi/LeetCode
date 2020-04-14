@@ -10,41 +10,21 @@ namespace LeetCode
         {
             if (s.Length != t.Length) return false;
 
-            Dictionary<char, int> ds = new Dictionary<char, int>();
-            Dictionary<char, int> dt = new Dictionary<char, int>();
-            int i = 0;
-            string ss = "";
-            string tt = "";
-            foreach (var c in s)
+            Dictionary<char, char> IsIsoD = new Dictionary<char, char>();
+
+            for (int i = 0; i < s.Length; i++)
             {
-                if (!ds.ContainsKey(c))
+                if (!IsIsoD.ContainsKey(s[i]))
                 {
-                    ds.Add(c, i);
-                    ss += i;
-                    i++;
+                    if (IsIsoD.ContainsValue(t[i])) return false;
+                    IsIsoD.Add(s[i], t[i]);
                 }
                 else
                 {
-                    ss += ds[c];
+                    if (IsIsoD[s[i]] != t[i]) return false;
                 }
             }
-            i = 0;
-            foreach (var c in t)
-            {
-                if (!dt.ContainsKey(c))
-                {
-                    dt.Add(c, i);
-                    tt += i;
-                    i++;
-                }
-                else
-                {
-                    tt += dt[c];
-                }
-            }
-
-            return ss == tt;
-
+            return true;
         }
     }
 }
