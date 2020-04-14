@@ -15,7 +15,7 @@ namespace LeetCode
             {
                 if (hs.Contains(target - numbers[i]))
                 {
-                    return new int[] { i+1, Array.IndexOf(numbers, target - numbers[i]) +1 };
+                    return new int[] { i+1, Array.LastIndexOf(numbers, target - numbers[i]) +1 };
                 }
             }
 
