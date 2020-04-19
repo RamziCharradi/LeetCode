@@ -27,6 +27,8 @@ namespace LeetCode
                 }
                 if (counter == nums.Length) return min;
             }
+
+            return min;
         }
     }
 }

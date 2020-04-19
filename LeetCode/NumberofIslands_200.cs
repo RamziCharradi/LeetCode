@@ -14,9 +14,9 @@ namespace LeetCode
             {
                 for (int j = 0; j < grid[0].Length; j++)
                 {
-                    if (grid[i][j] != '0')
+                    if (grid[i][j] == '1')
                     {
-                        Helper(ref grid, i, j);
+                        Helper(grid, i, j);
 
                         island++;
                     }
@@ -27,19 +27,19 @@ namespace LeetCode
             return island;
         }
 
-        public static void Helper(ref char[][] grid, int i, int j)
+        public static void Helper(char[][] grid, int i, int j)
         {
-            if (!(i < grid.Length && j < grid[i].Length && j >= 0 && i >= 0))
+            if (i < 0 || i >= grid.Length || j < 0 || j >= grid[i].Length || grid[i][j] == '0')
             {
                 return;
             }
-            else if(grid[i][j] != '0')
-            {
-                grid[i][j]--;
-                Helper(ref grid, i + 1, j);
-                Helper(ref grid, i, j + 1);
-                Helper(ref grid, i, j - 1);
-            }
+            grid[i][j] = '0';
+
+            Helper(grid, i + 1, j);
+            Helper(grid, i - 1, j);
+            Helper(grid, i, j + 1);
+            Helper(grid, i, j - 1);
+
 
         }
     }
