@@ -16,7 +16,8 @@ namespace LeetCode
                 if (arr[x] == 0)
                 {
                     Result[y++] = 0;
-                    Result[y++] = 0;
+                    if (y < arr.Length) Result[y++] = 0;
+                    else break;
                     x++;
                 }
                 else
@@ -25,7 +26,10 @@ namespace LeetCode
                 }
             }
 
+            Result.CopyTo(arr, 0);
+
             return Result;
         }
+
     }
 }
