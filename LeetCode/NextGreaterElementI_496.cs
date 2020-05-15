@@ -12,18 +12,18 @@ namespace LeetCode
             for (int i = 0; i < nums1.Length; i++)
             {
                 var index = Array.IndexOf(nums2, nums1[i]) + 1 ;
-                bool exist = false; 
+ 
                 while(index< nums2.Length)
                 {
                     if (nums1[i] < nums2[index]) 
                     {
                         result[i] = nums2[index];
-                        exist = true;
-                        break;
+                        goto exist;
                     } 
                     index++;
                 }
-                if (!exist) result[i] = -1;
+                result[i] = -1;
+            exist:;
             }
             return result;
         }
