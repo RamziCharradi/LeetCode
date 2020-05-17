@@ -9,7 +9,6 @@ namespace LeetCode
         public static int[] DailyTemperatures(int[] T)
         {
             var result = new int[T.Length];
-
             for (int i = 0; i < T.Length; i++)
             {
                 var x = i + 1;
