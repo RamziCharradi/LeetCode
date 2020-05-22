@@ -12,6 +12,7 @@ namespace LeetCode
             var right = s.Where(x=>x=='1').Count();
             var left = 0;
             var Result = 0;
+
             for (int i = 0; i < s.Length-1; i++)
             {
                 if (s[i] == '0') left++;
