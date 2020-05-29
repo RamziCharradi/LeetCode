@@ -9,8 +9,19 @@ namespace LeetCode
     {
         public static int DistanceBetweenBusStops(int[] distance, int start, int destination)
         {
-            int liMin = Math.Min(start, destination);
-            int liMax = Math.Max(start, destination);
+            int liMin = 0;
+            int liMax = 0;
+
+            if (start < destination)
+            {
+                liMin = start;
+                liMax = destination;
+            }
+            else
+            {
+                liMin = destination;
+                liMax = start;
+            }
 
             int liSumOfMax = distance.Skip(liMin).Take(liMax - liMin).Sum();
 
