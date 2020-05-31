@@ -9,7 +9,7 @@ namespace LeetCode
     {
         public static int FindUnsortedSubarray(int[] nums)
         {
-            int[] Sorted = nums.ToArray() ;
+            int[] Sorted = nums.ToArray();
             Array.Sort(Sorted);
 
             // int[] Sorted = nums.OrderBy(x => x).ToArray();
