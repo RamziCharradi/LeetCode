@@ -13,8 +13,9 @@ namespace LeetCode
             Queue<int> Result = new Queue<int>();
             foreach (var q in queries)
             {
-                Result.Enqueue(l.IndexOf(q));
-                l.RemoveAt(l.IndexOf(q));
+                var index = l.IndexOf(q);
+                Result.Enqueue(index);
+                l.RemoveAt(index);
                 l.Insert(0, q);
             }
 
